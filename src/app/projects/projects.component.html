@@ -1,6 +1,15 @@
 <div class="container-fluid">
-  <h2>My Projects</h2>
-    <p>
-      projects works!
-    </p>  
+  <h1>My Projects (More coming soon!)</h1>
+  
+  <div class="projects" *ngFor="let p of projects">
+    <div class="project_title">
+      <img class="icon" src="{{p.icon}}">
+      <span>{{p.name}}</span>
+    </div>
+    <div class="project_content">
+        <p>{{p.description}}</p>
+        <p><a target="_blank" href="{{p.primaryLink}}">Github</a></p>
+        <p><a target="_blank" *ngIf="p.secondaryLink" href="{{p.secondaryLink}}">Live App</a></p>
+    </div>
+  </div>
 </div>
