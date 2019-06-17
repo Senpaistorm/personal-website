@@ -18,12 +18,12 @@ export class ProjectsComponent implements OnInit {
      is to eliminate your opponent by placing your bombs in tactical positions. You can get closer to your opponent by blasting your way through 
      the obstacles. The player side that eliminates all other players wins.`,
      primaryLink:`https://github.com/UTSCC09/project-webgl-game`, secondaryLink:`https://bombman.me`,
-    icon:``},
+    icon:`../../assets/bombman.png`},
     {id:3, name:"Course Manager", description:`A web app that can manage your courses, grades, and computes your current overall mark as well 
      as a weighted average to see your mark progressively. This app has a simple to use interface that allows users to add or remove courses and 
      update marks with ease. The website is written with the django framework and SQLite database.`,
      primaryLink:`https://github.com/Senpaistorm/crs-manager`, secondaryLink:`https://www.austinlx.com/coursemanager`,
-     icon:``},
+     icon:`../../assets/crsmanager.png`},
     {id:2, name:"Path Tracer", description:`A program in C that renders a simple scene by tracing paths of which light would take in the scene.
      Techniques like explicit sampling, importance sampling are implemented to reduce noise in the generated scene.`,
      primaryLink:`https://github.com/Senpaistorm/Path-Tracer`, secondaryLink:``,
