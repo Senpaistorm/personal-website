@@ -22,7 +22,7 @@ export class ProjectsComponent implements OnInit {
     {id:3, name:"Course Manager", description:`A web app that can manage your courses, grades, and computes your current overall mark as well 
      as a weighted average to see your mark progressively. This app has a simple to use interface that allows users to add or remove courses and 
      update marks with ease. The website is written with the django framework and SQLite database.`,
-     primaryLink:`https://github.com/Senpaistorm/crs-manager`, secondaryLink:`https://www.austinlx.com/coursemanager`,
+     primaryLink:`https://github.com/Senpaistorm/crs-manager`, secondaryLink:``,
      icon:`../../assets/crsmanager.png`},
     {id:2, name:"Path Tracer", description:`A program in C that renders a simple scene by tracing paths of which light would take in the scene.
      Techniques like explicit sampling, importance sampling are implemented to reduce noise in the generated scene.`,
