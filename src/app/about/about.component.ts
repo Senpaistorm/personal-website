@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  about_text1 = `Hi my name is Austin! I am a 4th year computer science student(specialist in software engineer) graduating in fall 2019. 
+  about_text1 = `Hi my name is Austin! I am a recent computer science graduate from University of Toronto Scarborough.
   I have a passion for solving complex problems and taking on challenges.
   Most of the time my motivations are driven by my competitive spirit. I love the idea of trying to be
   the best at what I do and being able to constantly improve myself at any subject. 
