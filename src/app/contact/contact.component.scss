@@ -1,5 +1,13 @@
 .icon{
-    max-width: 80px;
+    max-width: 40px;
+}
+
+#contactUrls{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    padding:0;
 }
 
 ul {
@@ -8,4 +16,10 @@ ul {
 
 li {
     padding: 5px;
+}
+
+.footer_txt{
+    width:50%;
+    margin:auto;
+    text-align: center;
 }

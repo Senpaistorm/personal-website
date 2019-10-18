@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   pageTitle = 'Xiang (Austin) Li';
-  aboutTitle = 'About Me';
+  aboutTitle = 'About';
   projectsTitle = 'Projects';
   contactsTitle = 'Contact';
 

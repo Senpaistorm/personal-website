@@ -3,10 +3,10 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#">{{ pageTitle}}</a>
     </div>
+    
     <ul class="nav navbar-nav">
       <li><a routerLink="/" routerLinkActive="active">{{aboutTitle}}</a></li>
       <li><a routerLink="/projects">{{projectsTitle}}</a></li>
-      <li><a routerLink="/contacts">{{contactsTitle}}</a></li>
     </ul>
   </div>
 </nav>
@@ -19,3 +19,4 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- router -->
 <router-outlet></router-outlet>
+<app-contact></app-contact>
