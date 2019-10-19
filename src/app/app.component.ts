@@ -11,4 +11,16 @@ export class AppComponent {
   projectsTitle = 'Projects';
   contactsTitle = 'Contact';
 
+
+  onClick(event: any){
+    console.log(event);
+    let elements = document.getElementsByClassName("nav-link");
+    console.log(elements);
+    Array.from(elements).forEach(function(element){
+      element.classList.remove("active");
+    })
+      
+    event.preventDefault();
+    event.target.className += " active";
+  }
 }
