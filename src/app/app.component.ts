@@ -13,9 +13,7 @@ export class AppComponent {
 
 
   onClick(event: any){
-    console.log(event);
     let elements = document.getElementsByClassName("nav-link");
-    console.log(elements);
     Array.from(elements).forEach(function(element){
       element.classList.remove("active");
     })
