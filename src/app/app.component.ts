@@ -13,12 +13,12 @@ export class AppComponent {
 
 
   onClick(event: any){
-    let elements = document.getElementsByClassName("nav-link");
+    const elements = document.getElementsByClassName('nav-link');
     Array.from(elements).forEach(function(element){
-      element.classList.remove("active");
-    })
-      
+      element.classList.remove('active');
+    });
+
     event.preventDefault();
-    event.target.className += " active";
+    event.target.className += ' active';
   }
 }

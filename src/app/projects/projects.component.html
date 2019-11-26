@@ -1,14 +1,18 @@
-<div class="container-fluid">
-  
-  <div class="projects" *ngFor="let p of projects">
-    <div class="project_title">
-      <img class="icon" src="{{p.icon}}">
-      <span>{{p.name}}</span>
+<div class="container-fluid justify-content-around">
+  <div class="projects row" *ngFor="let p of projects">
+    <div class="project_title col-sm-4 col-12">
+      <img class="thumbnail" src="{{p.icon}}">
+      <div>{{p.name}}</div>
     </div>
-    <div class="project_content">
+    <div class="project_content col-sm-8 col-12">
         <p>{{p.description}}</p>
-        <p><a target="_blank" href="{{p.primaryLink}}">Github</a></p>
-        <p><a target="_blank" *ngIf="p.secondaryLink" href="{{p.secondaryLink}}">Live App</a></p>
+        <a target="_blank" href="{{p.primaryLink}}">
+          <img class="icon" src="assets/icons/github-logo.png">
+        </a>
+        <a target="_blank" *ngIf="p.secondaryLink" href="{{p.secondaryLink}}">
+            <img class="icon" src="assets/icons/icons8-external-link-32.png">
+        </a>
     </div>
   </div>
+
 </div>
