@@ -12,7 +12,7 @@ export const projects: Project[] = [
   is to eliminate your opponent by placing your bombs in tactical positions.
    You can get closer to your opponent by blasting your way through
    the obstacles. The player side that eliminates all other players wins.`,
-   primaryLink: `https://github.com/UTSCC09/project-webgl-game`, secondaryLink: `https://bombman.me`,
+   primaryLink: `https://github.com/UTSCC09/project-webgl-game`, secondaryLink: `http://bombman-bombman.apps.us-east-1.starter.openshift-online.com/`,
   icon: `assets/bombman.png`},
   {id: 3, name: `Course Manager`,
   description: `A web app that can manage your courses, grades, and computes your current overall mark as well
