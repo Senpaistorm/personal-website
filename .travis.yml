@@ -1,29 +1,17 @@
-
 language: node_js
 node_js:
   - "9"
 dist: trusty
-sudo: false
-
-branches:
+sudo: requiredbranches:
   only:
-  - master
-
-cache:
-  directories:
-    - node_modules
-
-install:
-  - npm install -g yarn
-
+  - masterbefore_script:
+  - npm install -g @angular/cli
 script:
-  - yarn lint
-  - yarn build --base-href /prod/
-  - mv dist/prod/index.html dist/prod/404.html
+  - ng build --prod --base-href https://austinli.me/
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: 87149710b615cabbc964fdde3b5fdb2ad9da978b
-  local_dir: prod
+  local_dir: dist/prod
   on:
     branch: master
