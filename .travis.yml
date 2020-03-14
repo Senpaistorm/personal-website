@@ -1,0 +1,29 @@
+
+language: node_js
+node_js:
+  - "9"
+dist: trusty
+sudo: false
+
+branches:
+  only:
+  - master
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install -g yarn
+
+script:
+  - yarn lint
+  - yarn build --base-href /prod/
+  - mv dist/prod/index.html dist/prod/404.html
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 87149710b615cabbc964fdde3b5fdb2ad9da978b
+  local_dir: prod
+  on:
+    branch: master
